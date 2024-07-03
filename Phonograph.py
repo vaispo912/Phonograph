@@ -2,6 +2,10 @@ import discord
 from discord.ext import commands
 import yt_dlp
 import asyncio
+import os
+from keep_alive import keep_alive
+
+bot = Bot(token=os.environ.get('token'))
 
 intents = discord.Intents.default()
 intents.message_content = True
