@@ -1,1 +1,10 @@
+# Python cache files
+__pycache__/
+*.pyc
 
+# Environment files
+.env
+config.py  # Your bot token should be private
+
+# OS-specific
+.DS_Store
