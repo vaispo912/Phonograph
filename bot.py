@@ -294,6 +294,7 @@ async def ping(ctx):
 async def main():
     await client.add_cog(MusicBot(client))
     await client.start(DISCORD_TOKEN)
+    bot.run(TOKEN)
 
 if __name__ == "__main__":
     asyncio.run(main())
