@@ -4,6 +4,7 @@ import yt_dlp
 import asyncio
 import os
 from concurrent.futures import ThreadPoolExecutor
+from config import DISCORD_TOKEN
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -292,7 +293,7 @@ async def ping(ctx):
 
 async def main():
     await client.add_cog(MusicBot(client))
-    await client.start('TOKEN HERE')
+    await client.start(DISCORD_TOKEN)
 
 if __name__ == "__main__":
     asyncio.run(main())
